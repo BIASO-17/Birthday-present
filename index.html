@@ -11,12 +11,19 @@
         background-size: cover;
       }
       header{ 
-        width: 90%;
+        width: 100%;
         margin: auto;
+        box-shadow: 0px 3px 10px 5px black;
       }
       div{
         display: flex;
 
+      }
+      h1{
+        text-align: center;
+        font-size: 70px;
+        color: white;
+        text-shadow: 1px 1px 2px black, 0 0 25px yellow, 0 0 5px orange;
       }
       #text {
         box-sizing: border-box;
@@ -29,7 +36,7 @@
         padding: 5px;
         margin: 5px;
         box-shadow: 5px 5px 10px black;
-        text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+        text-shadow: 1px 1px 2px black, 0 0 10px blue, 0 0 5px darkblue;
       }
 
 
@@ -38,20 +45,30 @@
         box-sizing: border-box;
         background-color: #eef0f0;
         border-radius: 20px;
-        padding: 5px 10px;
+        padding: 5px 5px;
+        padding-bottom: 15px;
         height: 500px;
         margin-top: 200px ;
         margin-bottom: 100px;
         
         box-shadow: 5px 5px 10px black;
         
+        
       }
       #first{
-          margin-right: 10px;
-          background-image: url(./Images/11.jpeg);
-          background-repeat: no-repeat;
+          margin-right: 10px;  
+}
+#first1{
+  box-sizing: border-box;
+  margin: 5px 5px 5px 5px;
+  border-radius: 20px;
+  background-color: black;
+  height: 480px;
+   background-image: url(./Images/13.jpeg);
+  background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+ 
 }
       
       #sec{
@@ -63,16 +80,46 @@
         box-shadow: 0px 3px 10px 5px black;
         border-radius: 10px;
       }
+      #last{
+        width: 80%;
+        margin: auto;
+        margin-top: 20px;
+        display: flex;
+        box-shadow: 0px 3px 10px 5px black;
+        gap: 60px;
+        padding: 0px 10px 0px 20px;
+        
+      }
+      .last{
+        width: 30%;
+        box-sizing: border-box;
+  margin: 5px 5px 5px 5px;
+  border-radius: 20px;
+  background-color: black;
+        height: 200px;
+        
+   background-image: url(./Images/13.jpeg);
+  background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+ 
+      }
     </style>
   </head>
   
   <body>
     <Header>
+      <h1 id="birth">
       HAPPY BIRTHDAY ...
+    </h1>
     </Header>
-    <img src="" alt="">
+    <div id="pic">
+      <span></span>
+    </div>
     <div>
-      <aside id="first"> </aside>
+      <aside id="first"> <div id="first1">
+        ifeoluwa
+      </div></aside>
       <main>
         <p id="text">My Dearest [Friend's Name],
         
@@ -94,7 +141,12 @@
         
         [Your Name]</p>
       </main>
-  <aside id="sec">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium perspiciatis labore hic assumenda exercitationem inventore nulla voluptas aspernatur maiores. Nihil? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quia fugiat perspiciatis officiis modi ullam dicta distinctio adipisci corporis dignissimos asperiores sint delectus, soluta vitae quasi, unde id ratione quisquam esse earum accusantium omnis similique aspernatur. In asperiores ea dolor.</aside>
+  <aside id="sec"><div id="first1"></div></aside>
+</div>
+<div id="last">
+<div id="1" class="last"></div>
+<div id="2" class="last"></div>
+<div id="3" class="last"></div>
 </div>
 
     <script>
@@ -109,6 +161,10 @@
           clearInterval(interval);
         }
       }, 50);
+
+
+      
     </script>
+    -->
   </body>
 </html>
