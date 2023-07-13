@@ -3,45 +3,99 @@
   <head>
     <title>Typewriter Effect</title>
     <style>
-      div{
-        padding: 0px;
-        width: 95%;
+      body{
+        background-image: url(./Images/10.jpg);
+        background-repeat: no-repeat;
+        background-size: 100vh;
+        background-position: center;
+        background-size: cover;
+      }
+      header{ 
+        width: 90%;
         margin: auto;
       }
+      div{
+        display: flex;
+
+      }
       #text {
-        font-size: 30px;
+        box-sizing: border-box;
+        font-size: 25px;
         font-style:italic;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
         font-weight: 500;
+        background-color: #eef0f0;
+        border-radius: 20px;
+        padding: 5px;
+        margin: 5px;
+        box-shadow: 5px 5px 10px black;
+        text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+      }
+
+
+      aside{
+        width: 20%;
+        box-sizing: border-box;
+        background-color: #eef0f0;
+        border-radius: 20px;
+        padding: 5px 10px;
+        height: 500px;
+        margin-top: 200px ;
+        margin-bottom: 100px;
+        
+        box-shadow: 5px 5px 10px black;
+        
+      }
+      #first{
+          margin-right: 10px;
+          background-image: url(./Images/11.jpeg);
+          background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+      
+      #sec{
+        margin-left: 10px;
+      }
+      main{
+        width: 60%;
+        min-height: 30px;
+        box-shadow: 0px 3px 10px 5px black;
+        border-radius: 10px;
       }
     </style>
   </head>
   
   <body>
     <Header>
-      HAPPY BIRTHDAY IRE
+      HAPPY BIRTHDAY ...
     </Header>
-    <div >
-      <p id="text">My Dearest [Friend's Name],
-      
-      On this magical day, as the world celebrates your birthday, I want to take a moment to express my heartfelt wishes and gratitude for having you in my life. Happy birthday, my dear friend!
-      
-      From the first day we crossed paths, it was evident that our friendship was destined to be something extraordinary. Your infectious laughter, your kind heart, and your unwavering support have touched my life in ways I cannot even begin to express. You bring so much light and positivity into my world, and for that, I am eternally grateful.
-      
-      Through the ups and downs, the laughter and tears, you have stood by my side with unwavering loyalty. Your presence has been a constant source of comfort and strength, reminding me that I am never alone. The memories we have created together are treasures I hold dear, and I cherish each and every moment we have shared.
-      
-      Your friendship has taught me the true meaning of love, compassion, and selflessness. You have a remarkable ability to see the beauty in others and bring out the best in them. Your kindness knows no bounds, and your generosity is unparalleled. You have made a profound impact on my life, and I am forever grateful for the love and care you have shown me.
-      
-      As we celebrate your special day, my wish for you is simple yet profound. May your path be filled with endless joy, boundless adventures, and remarkable achievements. May you continue to pursue your dreams with passion and determination, knowing that you have the unwavering support of those who love you.
-      
-      On this day, I want you to know how truly special you are to me. Your friendship has been a gift that I treasure beyond measure. Thank you for being the incredible person that you are, for bringing so much love and joy into my life, and for being there for me through thick and thin.
-      
-      Happy birthday, my dear friend! May this day be the beginning of a new chapter filled with laughter, love, and unforgettable memories. May you always find happiness in every step you take and may all your dreams come true.
-      
-      With all my love and warmest wishes,
-      
-      [Your Name]</p>
-  </div>
+    <img src="" alt="">
+    <div>
+      <aside id="first"> </aside>
+      <main>
+        <p id="text">My Dearest [Friend's Name],
+        
+        On this magical day, as the world celebrates your birthday, I want to take a moment to express my heartfelt wishes and gratitude for having you in my life. Happy birthday, my dear friend!
+        
+        From the first day we crossed paths, it was evident that our friendship was destined to be something extraordinary. Your infectious laughter, your kind heart, and your unwavering support have touched my life in ways I cannot even begin to express. You bring so much light and positivity into my world, and for that, I am eternally grateful.
+        
+        Through the ups and downs, the laughter and tears, you have stood by my side with unwavering loyalty. Your presence has been a constant source of comfort and strength, reminding me that I am never alone. The memories we have created together are treasures I hold dear, and I cherish each and every moment we have shared.
+        
+        Your friendship has taught me the true meaning of love, compassion, and selflessness. You have a remarkable ability to see the beauty in others and bring out the best in them. Your kindness knows no bounds, and your generosity is unparalleled. You have made a profound impact on my life, and I am forever grateful for the love and care you have shown me.
+        
+        As we celebrate your special day, my wish for you is simple yet profound. May your path be filled with endless joy, boundless adventures, and remarkable achievements. May you continue to pursue your dreams with passion and determination, knowing that you have the unwavering support of those who love you.
+        
+        On this day, I want you to know how truly special you are to me. Your friendship has been a gift that I treasure beyond measure. Thank you for being the incredible person that you are, for bringing so much love and joy into my life, and for being there for me through thick and thin.
+        
+        Happy birthday, my dear friend! May this day be the beginning of a new chapter filled with laughter, love, and unforgettable memories. May you always find happiness in every step you take and may all your dreams come true.
+        
+        With all my love and warmest wishes,
+        
+        [Your Name]</p>
+      </main>
+  <aside id="sec">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium perspiciatis labore hic assumenda exercitationem inventore nulla voluptas aspernatur maiores. Nihil? Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam quia fugiat perspiciatis officiis modi ullam dicta distinctio adipisci corporis dignissimos asperiores sint delectus, soluta vitae quasi, unde id ratione quisquam esse earum accusantium omnis similique aspernatur. In asperiores ea dolor.</aside>
+</div>
 
     <script>
       var text = document.getElementById("text").textContent;
