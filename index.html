@@ -2,6 +2,7 @@
 <html>
   <head>
     <title>Typewriter Effect</title>
+    
     <style>
       body{
         background-image: url(./Images/10.jpg);
@@ -108,11 +109,15 @@
   </head>
   
   <body>
+    
     <Header>
-      <h1 id="birth">
+      <h1 id="text-container">
       HAPPY BIRTHDAY ...
     </h1>
     </Header>
+    <a href="ife.html
+    ">love</a>
+    
     <div id="pic">
       <span></span>
     </div>
@@ -149,7 +154,24 @@
 <div id="3" class="last"></div>
 </div>
 
-    <script>
+  
+
+<script>
+const paragraph = document.getElementById('text-container');
+    const originalText = paragraph.textContent;
+    let currentIndex = 0;
+
+    function displayText() {
+      if (currentIndex < originalText.length) {
+        paragraph.textContent = originalText.substr(0, currentIndex + 1);
+        currentIndex++;
+        setTimeout(displayText, 100); // Adjust the delay between characters (in milliseconds) as desired
+      }
+    }
+
+    displayText();
+
+
       var text = document.getElementById("text").textContent;
       document.getElementById("text").textContent = "";
 
@@ -162,7 +184,16 @@
         }
       }, 50);
 
+      var lot = document.getElementById("birth").textContent;
 
+      var index = 0;
+      var interval = setInterval(function () {
+        document.getElementById("birth").textContent += lot[index];
+        index++;
+        if (index >= lot.length) {
+          clearInterval(interval);
+        }
+      }, 50);
       
     </script>
     -->
