@@ -42,20 +42,24 @@
       }
 
 
-      #w{
+      .w{
         width: 20%;
         box-sizing: border-box;
         
         border-radius: 20px;
         padding: 5px 5px;
-        
-        
-       
-        box-shadow: 0px 3px 10px 5px black;
-        
-        
+        box-shadow: 0px 3px 10px 5px black; 
+      }
+      #w{
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
         
       }
+      #x{
+        border-top-left-radius: 0px;
+        border-bottom-left-radius: 0px;
+      }
+      
       #d{
           gap: 10px;
         }
@@ -171,7 +175,7 @@
       </div>
     </div>
     <div id="d">
-      <div id="w">
+      <div id="w" class="w">
       <aside id="first"> <div id="first1">
        
       </div></aside>
@@ -194,10 +198,10 @@
         Happy birthday, my dear friend! May this day be the beginning of a new chapter filled with laughter, love, and unforgettable memories. May you always find happiness in every step you take and may all your dreams come true.
         
         With all my love and warmest wishes,
-        
+        <br>
         [Your Name]</p>
       </main>
-      <div id="w">
+      <div id="x" class="w" >
   <aside id="sec"><div id="first1"></div></aside>
 </div>
 </div>
